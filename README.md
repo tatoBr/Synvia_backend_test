@@ -13,7 +13,7 @@ The request body needs to be in JSON format and include the following properties
  
 _Example:_
 ```
-POST /professionals
+POST /users
 
 {
 	"username": "phill675",
@@ -25,7 +25,7 @@ _The response body will contain a message and the newly created Professional's i
 
 ### Login in the system ###
 _>>GET /users/login_
->Login user and creates its access token
+>Login a user and creates its access token
 
 The request body needs to be in JSON format and include the following properties:
 - `email` - **String** - Required;
@@ -89,7 +89,8 @@ _The response body will contain a message and the sample anaysis result_<br><br>
 _>>GET /samples_
 >Allows any user to get a list of tested analysis. Authorization is Required
 
-The request body needs to be empty:
+The request body needs to be empty.
+
 _Example:_
 ```
 GET /samples
